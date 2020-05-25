@@ -2,13 +2,15 @@ package mode.dao;
 
 import java.util.List;
 
+import mode.entities.Seller;
+
 
 public interface SellerDao {
 	
-	void insert(SellerDao obj);
-	void update(SellerDao obj);
+	void insert(Seller obj);
+	void update(Seller obj);
 	void deleteById(Integer id);
-	SellerDao findById(Integer id);
+	Seller findById(Integer id);
 	
 	List<SellerDao> findAll();
 }
